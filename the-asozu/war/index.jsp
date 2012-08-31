@@ -22,16 +22,18 @@
 </head>
 <body>
 	<div class="wrapper" id="header">
-	<div class="dc_container" id="sub-header">
+	<div class="dc_container">
+	<div id="sub-header">
 		<div class="div-centered" id="logo-link">
-			<a href="#">the-asozu</a>
+			<a href="index.jsp">the-asozu</a>
 		</div>	
 		<div class="div-centered" id="top-bar">
-			&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">məşhur</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">yeni</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="popular.jsp">məşhur</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="latest.jsp">yeni</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">filter</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">əlavə/redaktə</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="addProverb.jsp">əlavə<!--/redaktə--></a>
 		</div>
+	</div>
 	</div>
 	</div>
 	<%
@@ -52,5 +54,6 @@
                </div>
 		 </div>
 	</div>
+	
 </body>
 </html>

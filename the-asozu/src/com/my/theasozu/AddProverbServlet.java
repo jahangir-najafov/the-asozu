@@ -19,11 +19,10 @@ import javax.servlet.http.HttpServletResponse;
 public class AddProverbServlet extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse resp)
                 throws IOException {
-        UserService userService = UserServiceFactory.getUserService();
-        User user = userService.getCurrentUser();
+        //UserService userService = UserServiceFactory.getUserService();
+        //User user = userService.getCurrentUser();
 
-        String proverbCollectionName = req.getParameter("proverbCollectionName");
-        Key proverbKey = KeyFactory.createKey("ProverbCollection", proverbCollectionName);
+        Key proverbKey = KeyFactory.createKey("ProverbCollection", "default");
         String content = req.getParameter("content");
         String language = null;
         String category = null;
@@ -38,12 +37,13 @@ public class AddProverbServlet extends HttpServlet {
         proverb.setProperty("source", source);
         proverb.setProperty("definition", definition);
         proverb.setProperty("numberOfLikes", numberOfLikes);
-        proverb.setProperty("user", user);
+        proverb.setProperty("user", "default");
+        //proverb.setProperty("user", user);
         proverb.setProperty("date", date);
 
         DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
         datastore.put(proverb);
 
-        resp.sendRedirect("/the-asozu.jsp?proverbCollectionName=" + proverbCollectionName);
+        resp.sendRedirect("/latest.jsp");
     }
 }

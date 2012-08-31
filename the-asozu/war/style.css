@@ -30,10 +30,8 @@ html,body{height:100%;}
 }
 
 #sub-header
-{
-	
-	
-	width: 800px; /*for some reason this does not work*/
+{	
+	width: 800px;
 	margin: 0px auto;
 }
 
@@ -66,4 +64,41 @@ html,body{height:100%;}
 {
 	text-align: center;
 	font: 40px Oranienbaum "Arial", Helvetica, sans;
+}
+
+#list-proverb
+{	
+	width: 800px;
+	margin: 0px auto;
+	margin-top: 140px;
+}
+
+#list-proverb p
+{
+	font: 25px Oranienbaum "Arial", Helvetica, sans;
+	padding: 15px;
+}
+
+.proverb-container
+{
+	background-color: #FAFAFA;
+	margin: 25px 0px 25px 0px;
+}
+
+#add-textarea
+{
+	border:none;
+	outline:none;
+	padding: 15px;
+	background-color: #FAFAFA;
+	height: 150px;
+	width: 600px;
+	font: 20px Oranienbaum "Arial", Helvetica, sans;
+	margin-bottom: 20px;
+}
+
+#submit_btn
+{
+		width: 600px;
+		style: none;
 }
