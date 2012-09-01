@@ -30,34 +30,24 @@
 		<div class="div-centered" id="top-bar">
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="popular.jsp">məşhur</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="latest.jsp">yeni</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">filter</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="">filter</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="addProverb.jsp">əlavə<!--/redaktə--></a>
 		</div>
 	</div>
 	</div>
 	</div>
-	<%
-		String proverbCollectionName = "default";
-		DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-		Key proverbKey = KeyFactory.createKey("ProverbCollection", proverbCollectionName);
-		Query query = new Query("Proverb", proverbKey);
-		List<Entity> proverbs = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(100));
-		Random randomGenerator = new Random();
-		int randomInt = randomGenerator.nextInt(proverbs.size());
-		Entity proverb = proverbs.get(randomInt);
-		pageContext.setAttribute("proverb_content", proverb.getProperty("content"));
-	%>
+
 	<div class="wrapper">
          <div class="dc_container">
                <div  >
     				<form class="div-centered" id="add-form" action="/add" method="post">
       					<div><textarea id="add-textarea" name="content" rows="3" cols="60"></textarea></div>
-      					<div><input id="submit_btn" type="submit" value="Add a Proverb" /></div>
+      					<div><input id="submit_btn" type="text" value="əlavə olunsun" onclick="form.submit();" readonly/></div>
     		   		</form>
                </div>
 		 </div>
 	</div>
-	
 </body>
+
 </html>
 

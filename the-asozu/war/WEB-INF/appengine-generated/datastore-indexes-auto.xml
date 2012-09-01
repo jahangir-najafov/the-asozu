@@ -1,15 +1,15 @@
-<!-- Indices written at Fri, 31 Aug 2012 20:49:31 UTC -->
+<!-- Indices written at Sat, 1 Sep 2012 06:37:40 UTC -->
 
 <datastore-indexes>
 
-    <!-- Used 112 times in query history -->
-    <datastore-index kind="Proverb" ancestor="true" source="auto">
-        <property name="date" direction="desc"/>
-    </datastore-index>
-
-    <!-- Used 3 times in query history -->
+    <!-- Used 2 times in query history -->
     <datastore-index kind="Proverb" ancestor="true" source="auto">
         <property name="numberOfLikes" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 11 times in query history -->
+    <datastore-index kind="Proverb" ancestor="true" source="auto">
+        <property name="date" direction="desc"/>
     </datastore-index>
 
 </datastore-indexes>

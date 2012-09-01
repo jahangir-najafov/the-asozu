@@ -30,7 +30,7 @@
 		<div class="div-centered" id="top-bar">
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="popular.jsp">məşhur</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="latest.jsp">yeni</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">filter</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="">filter</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;<a href="addProverb.jsp">əlavə<!--/redaktə--></a>
 		</div>
 	</div>

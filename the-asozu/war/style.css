@@ -22,7 +22,7 @@ html,body{height:100%;}
 
 #header
 {
-	background-color: #E6E6E6; 
+	background-color: #F2F2F2; 
 	height: 40px;
 	width: 100%;
 	margin: 0px auto;
@@ -38,7 +38,7 @@ html,body{height:100%;}
 #sub-header a
 {
 	font: 20px Oranienbaum "Arial", Helvetica, sans;
-	color: #848484;
+	color: /*#848484*//*#380B61*//*#4B088A*//*#9F81F7*/#BDBDBD/*#A4A4A4*/;
 	text-decoration: none;
 }
 
@@ -46,7 +46,6 @@ html,body{height:100%;}
 {
 	float: left;
 	margin-left: 20px;
-	text-color: #00FFFF !important; 
 }
 
 #top-bar
@@ -81,7 +80,7 @@ html,body{height:100%;}
 
 .proverb-container
 {
-	background-color: #FAFAFA;
+	background-color: /*#E6E6E6*//*#FAFAFA*/#F2F2F2;
 	margin: 25px 0px 25px 0px;
 }
 
@@ -99,6 +98,14 @@ html,body{height:100%;}
 
 #submit_btn
 {
-		width: 600px;
-		style: none;
+	border:none;
+	outline:none;
+	padding: 10px;
+	background-color: #FAFAFA;
+	height: 40px;
+	width: 600px;
+	style: none;
+	font: 20px Oranienbaum "Arial", Helvetica, sans;
+	text-align: center;
+	color: /*#848484*/#6E6E6E;
 }
